@@ -1,0 +1,98 @@
+/*
+Theme Name: mentalhealth
+Theme URI: https://github.com/iamthepoe/mentalhealth
+Description: Tema sobre saúde mental.
+Author: Luca Poe e Maria Luiza
+Author URI: https://github.com/iamthepoe
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+:root{
+    --white: #faf0e6;
+    --white-bege: #fff0db;
+    --bege: #eed9c4;
+    --dark-bege: #e4d5b7;
+    --brown: #d9b99b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body{
+    background-color: var(--brown);
+}
+
+header, header ul, main, .default-content{
+    display: flex;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(228, 214, 202, 0.8);
+}
+
+header ul{
+    list-style: none;
+}
+
+header .logo{
+    font-size: 1.4rem;
+}
+
+header ul li{
+    margin: 10%;
+    transition: 0.3s;
+}
+
+header ul li:hover{
+    margin-left: 15%;
+    color: #d37e2f;
+}
+
+.demo-bg {
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.default-content{
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    display: flex;
+    align-items: center;
+    width: 86%;
+    height: 30vh;
+    padding:30px;
+    background-color: rgba(228, 214, 202, 0.6);
+}
